@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe Example using Google map</title>
+    <link rel="stylesheet" type="text/css" href="./mapguide.css">
+</head>
+<body>
+ <h1>Search Location of our <span><u>JOB HUB</u></span></h1>
+ <h1>By team</h1>
+ 
+        
+ <div class="search-box">
+        <input type="text"id="locationInput"placeholder="Enter place...(eg.KL University)">
+        <button onclick="searchLocation()">Search</button>
+</div>
+<iframe id ="mapFrame"
+src=" https://www.google.com/maps?q=KL%20University&output=embed">
+</iframe>
+    <script src="./mapguide.js"></script>
+</body>
+</html>

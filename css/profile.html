@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobHub | Professional Profile</title>
+
+  <link rel="stylesheet" href="./profile.css">
+  <script defer src="./profile.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">JobHub Pro</div>
+
+    <ul class="nav-links">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="professional.html">Dashboard</a></li>
+      <li><a href="Customersupport.html">Support</a></li>
+      <li><a href="mapguide.html">Map Guide</a></li>
+      <li><a href="videoguide.html">Video Guide</a></li>
+      <li><a href="profile.html" class="active">Profile</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="user.html">User</a></li>
+      <li><a href="logout.html" class="logout-btn">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- PROFILE SECTION -->
+  <main class="profile-container">
+    <h1>Your Professional Profile</h1>
+
+    <div class="profile-card">
+
+      <!-- PHOTO -->
+      <div class="photo-section">
+        <img id="profileImage" src="https://via.placeholder.com/150" alt="Profile Photo">
+        <input type="file" id="uploadPhoto" accept="image/*">
+      </div>
+
+      <!-- INFO -->
+      <form class="info-section">
+        <label for="proName">Name</label>
+        <input type="text" id="proName" placeholder="Enter your name">
+
+        <label for="proRole">Profession</label>
+        <input type="text" id="proRole" placeholder="Enter your profession">
+
+        <label for="proSkills">Skills</label>
+        <textarea id="proSkills" placeholder="Web Development, Editing, Designing"></textarea>
+
+        <label for="proExp">Experience</label>
+        <textarea id="proExp" placeholder="Describe your experience"></textarea>
+
+        <button type="submit" id="saveBtn">Save Profile</button>
+      </form>
+
+    </div>
+  </main>
+
+</body>
+</html>

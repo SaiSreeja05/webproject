@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: url('./wall1.avif') no-repeat center/cover;
+  color: #333;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0052cc;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #444;
+}
+
+.nav-item:hover {
+  color: #0052cc;
+}
+
+.login-link a {
+  color: #0052cc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown {
+  display: none;
+  position: absolute;
+  background: #fff;
+  border-radius: 8px;
+  min-width: 180px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  margin-left: 200px;
+  margin-top: 10px;
+  z-index: 100;
+}
+
+.dropdown ul {
+  list-style: none;
+}
+
+.dropdown li {
+  padding: 12px 18px;
+  cursor: pointer;
+}
+
+.dropdown li:hover {
+  background: #f0f4ff;
+  color: #0052cc;
+}
+
+/* ===== REGISTER SECTION ===== */
+.register-section {
+  display: flex;
+  justify-content: center;
+  padding: 70px 20px;
+}
+
+.register-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* ===== INFO CARD ===== */
+.info-card {
+  width: 40%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.info-card img {
+  width: 130px;
+  display: block;
+  margin: auto;
+}
+
+.info-card h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #1f3a93;
+}
+
+/* ===== FORM CARD ===== */
+.form-card {
+  width: 60%;
+  background: #fff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.form-card label {
+  font-weight: 600;
+  display: block;
+  margin-top: 15px;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.form-card input:focus {
+  border-color: #0052cc;
+  outline: none;
+}
+
+.create-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 14px;
+  background: #0052cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background: #003d99;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f1f1f1;
+  margin-top: 60px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .register-container {
+    flex-direction: column;
+  }
+
+  .info-card,
+  .form-card {
+    width: 100%;
+  }
+}

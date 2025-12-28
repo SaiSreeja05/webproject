@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Your Dream Job </title>
+  <link rel="stylesheet" href="./homepage.css" />
+</head>
+<body>
+  
+  <header class="navbar">
+    <h1 class="logo">
+        <span class="job">Job</span><span class="hub">Hub</span>
+    </h1>
+
+      <nav>
+            <ul>
+                <li><a href="homepage.html">Homepage</a></li>
+                <li><a href="Professional.html">Professional</a></li>
+                <li><a href="Admin.html">Admin</a></li>
+                <li><a href="Customersupport.html">Customersupport</a></li>
+                <li><a href="company.html">Company</a></li>
+                <li><a href="jobs.html">jobs</a></li>
+               <li><a href="mapguide.html" class="active">mapguide</a></li>
+                <li><a href="profile.html" class="active">profile</a></li>
+               <li><a href="user.html" class="active">user</a></li>
+                <li><a href="videoguide.html" class="active">video</a></li>
+            </ul>
+        </nav>
+    
+    <div class="auth-buttons">
+      <li><a href="Login.html"><button>Login</button></a></li>
+      <li><a href="Logout.html"><button>Logout</button></a></li>
+      <li><a href="register.html"><button>Register</button></a></li>
+      
+
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Find your dream job now</h1>
+    <p>5 lakh+ jobs for you to explore</p>
+
+    <div class="search-bar">
+      <input type="text" id="skillInput" placeholder="Enter skills / designations / companies" />
+
+      <select id="experienceSelect">
+        <option>Select experience</option>
+        <option>Fresher</option>
+        <option>1-3 years</option>
+        <option>3-5 years</option>
+        <option>5+ years</option>
+      </select>
+
+      <input type="text" id="locationInput" placeholder="Enter location" />
+
+      <button class="search-btn" id="searchBtn" onclick="runSearch()">Search</button>
+    </div>
+
+    <div class="info-banner">
+  <p>💡 Tip of the Day: Keep your resume updated to increase interview calls.</p>
+  </div>
+  </section>
+
+  <footer>
+    <p>© 2025 JobHub | Designed by team</p>
+  </footer>
+
+  <script src="./homepage.js"></script>
+</body>
+</html>

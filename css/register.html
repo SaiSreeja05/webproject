@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JobHub | Register</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./register.css">
+</head>
+
+<body>
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="navbar">
+    <h1 class="logo">JobHub</h1>
+
+    <nav aria-label="Main Navigation">
+      <button class="nav-item" onclick="toggleMenu('jobsMenu')">Jobs</button>
+      <button class="nav-item" onclick="toggleMenu('companiesMenu')">Companies</button>
+      <button class="nav-item" onclick="toggleMenu('servicesMenu')">Services</button>
+    </nav>
+
+    <div class="login-link">
+      Already Registered? <a href="#">Login</a>
+    </div>
+  </header>
+
+  <!-- ===== DROPDOWNS ===== -->
+  <div class="dropdown" id="jobsMenu">
+    <ul>
+      <li>Software Developer</li>
+      <li>Web Developer</li>
+      <li>Data Analyst</li>
+      <li>UI/UX Designer</li>
+    </ul>
+  </div>
+
+  <div class="dropdown" id="companiesMenu">
+    <ul>
+      <li>Google</li>
+      <li>Amazon</li>
+      <li>Infosys</li>
+      <li>TCS</li>
+    </ul>
+  </div>
+
+  <div class="dropdown" id="servicesMenu">
+    <ul>
+      <li>Resume Building</li>
+      <li>Job Alerts</li>
+      <li>Career Guidance</li>
+      <li>Mock Interviews</li>
+    </ul>
+  </div>
+
+  <!-- ===== REGISTER SECTION ===== -->
+  <main class="register-section">
+    <div class="register-container">
+
+      <aside class="info-card">
+        <img src="../images/register.avif" alt="Register illustration">
+        <h2>On registering, you can</h2>
+        <ul>
+          <li>✔ Build your profile</li>
+          <li>✔ Get job alerts</li>
+          <li>✔ Apply to jobs easily</li>
+          <li>✔ Track applications</li>
+        </ul>
+      </aside>
+
+      <section class="form-card">
+        <h2>Create Register Account</h2>
+
+        <form>
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Create password" required>
+
+          <button type="submit" class="create-btn">Register</button>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2025 JobHub Register Page. All rights reserved.
+  </footer>
+
+  <!-- JS -->
+  <script src="../jsfiles/register.js"></script>
+</body>
+</html>
